@@ -1,0 +1,25 @@
+header.header
+	.header__top
+		.container
+			.header__contacts
+				a.header__contact.header__phone(href='tel:6337 3128')
+					i.fa.fa-mobile
+					span 6337 3128
+				a.header__contact.header__email(href='mailto:info@business.co')
+					i.fa.fa-envelope
+					span info@business.co
+				a.header__contact.header__facebook(href='https://facebook.comheader__contact.')
+					i.fa.fa-facebook
+	.header__bottom
+		.container
+			.header__bottom-container
+				.header__logo
+					img.header__logo-pic(src='images/logo.png')
+				nav.header__nav
+					- var items = ['Home', 'About Us', 'Our Approach', 'Our Work']
+						each link in items
+							if link == 'Home'
+								a.header__nav-link.header__nav-link--active(href='#')=link
+							else
+								a.header__nav-link(href='#')=link
+				a.button.button--red.header__consultation Free Consultation

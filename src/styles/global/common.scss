@@ -1,0 +1,30 @@
+.button {
+	border-radius: 5px;
+
+	color: #fff;
+	font-family: $font-family-main-bold;
+
+	cursor: pointer;
+
+	&--red {
+		background-color: $main-red;
+		transition: 0.3s;
+
+		&:hover {
+			background-color: lighten($main-red, 7%);
+		}
+	}
+
+	&--yellow {
+		background-color: #f8cd53;
+		transition: 0.3s;
+
+		&:hover {
+			background-color: lighten(#f8cd53, 7%);
+		}
+	}
+
+	&--uppercase {
+		text-transform: uppercase;
+	}
+}
