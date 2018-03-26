@@ -1,6 +1,6 @@
-*** Landing Page Layout
+# Landing Page Layout
 
-***** Technologies Used:
+##### Technologies Used:
 - HTML5
 - CSS3
 - Sass
