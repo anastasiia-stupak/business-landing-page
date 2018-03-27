@@ -1,0 +1,41 @@
+.hero {
+	min-height: 590px;
+	padding-top: 163px;
+	padding-bottom: 235px;
+	background-image: url('../images/hero-bg.png');
+	background-position: center;
+	background-size: cover;
+	background-color: $dark-gray-text;
+	position: relative;
+
+	&__content {
+		@include centerer-x();
+
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		color: #fff;
+	}
+
+	&__title {
+		margin: 0;
+
+		font-family: $font-family-main-bold;
+		font-size: 3rem;
+		text-align: center;
+	}
+
+	&__text {
+		margin: 0;
+		margin-bottom: 28px;
+
+		font-family: $font-family-main-light;
+		font-size: 1.875rem;
+		letter-spacing: 0.5px;
+	}
+
+	&__button {
+		padding: 20px 40px;
+		font-size: 1.5rem;
+	}
+}
