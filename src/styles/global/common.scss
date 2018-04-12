@@ -28,3 +28,36 @@
 		text-transform: uppercase;
 	}
 }
+
+.title {
+	margin: 0;
+	color: $dark-gray-text;
+
+	text-align: center;
+
+	&__header {
+		margin: 0;
+		font-size: 2.25rem;
+		font-family: $font-family-main-bold;
+		line-height: 1;
+	}
+
+	&__text {
+		margin: 0;
+		font-size: 1.25rem;
+		letter-spacing: 0.4px;
+		font-family: $font-family-main-light;
+	}
+
+	&--with-bottom-line {
+		position: relative;
+		&:after {
+			@include centerer-x();
+			content: '';
+			bottom: -16px;
+			height: 5px;
+			width: 45px;
+			background-color: $dark-gray-text;
+		}
+	}
+}

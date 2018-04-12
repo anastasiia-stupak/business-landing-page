@@ -17,6 +17,7 @@ header.header
 					img.header__logo-pic(src='images/logo.png')
 				nav.header__nav
 					- var items = ['Home', 'About Us', 'Our Approach', 'Our Work']
+					- var sections = [''];
 						each link in items
 							if link == 'Home'
 								a.header__nav-link.header__nav-link--active(href='#')=link
