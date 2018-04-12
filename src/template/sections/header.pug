@@ -17,10 +17,10 @@ header.header
 					img.header__logo-pic(src='images/logo.png')
 				nav.header__nav
 					- var items = ['Home', 'About Us', 'Our Approach', 'Our Work']
-					- var sections = [''];
-						each link in items
+					- var dataItems = ['header', 'about', 'approach', 'work']
+						each link, key in items
 							if link == 'Home'
-								a.header__nav-link.header__nav-link--active(href='#')=link
+								a.header__nav-link.header__nav-link--active(href='#' data-link=dataItems[key])=link
 							else
-								a.header__nav-link(href='#')=link
+								a.header__nav-link(href='#' data-link=dataItems[key])=link
 				a.button.button--red.header__consultation Free Consultation
