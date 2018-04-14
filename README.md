@@ -1,4 +1,5 @@
 # Business Landing Page
+##### A responsive landing page layout
 
 #### Technologies Used:
 - HTML5
