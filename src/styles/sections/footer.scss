@@ -1,0 +1,19 @@
+.footer {
+	padding-top: 25px;
+	padding-bottom: 30px;
+	background-color: $socials-footer-gray;
+	text-align: center;
+
+	&__copy {
+		display: inline-block;
+		margin: 0 auto;
+		color: #cecece;
+		font-size: 0.875rem;
+	}
+	&__link {
+		margin: 0 5px;
+		color: #cecece;
+		text-decoration: none;
+		font-weight: bold;
+	}
+}
