@@ -11,16 +11,16 @@ const sourcemaps = require('gulp-sourcemaps');
 
 // ------- Server ---------
 
-gulp.task('server', function () {
-	browserSync.init({
-		server: {
-			port: 9000,
-			baseDir: "build/"
-		}
-	});
-
-	gulp.watch('build/**/*').on('change', browserSync.reload);
-});
+// gulp.task('server', function () {
+// 	browserSync.init({
+// 		server: {
+// 			port: 9000,
+// 			baseDir: "build/"
+// 		}
+// 	});
+//
+// 	gulp.watch('build/**/*').on('change', browserSync.reload);
+// });
 
 // ------- Pug Compile ---------
 
@@ -93,20 +93,27 @@ gulp.task('copy', gulp.parallel('copy:fonts', 'copy:images'));
 
 // ------------ Watchers -----------
 
-gulp.task('watch', function () {
-	gulp.watch('src/template/**/*.pug', gulp.series('templates:compile'));
-	gulp.watch('src/styles/**/*.scss', gulp.series('styles:compile'))
-});
+// gulp.task('watch', function () {
+// 	gulp.watch('src/template/**/*.pug', gulp.series('templates:compile'));
+// 	gulp.watch('src/styles/**/*.scss', gulp.series('styles:compile'))
+// });
 
 
 // ------------ Default -----------
 
+// gulp.task('default', gulp.series(
+// 		'clean',
+// 		gulp.parallel('templates:compile', 'styles:compile', 'sprite', 'copy'),
+// 		gulp.parallel('watch', 'server')
+// 	)
+// );
+
 gulp.task('default', gulp.series(
-		'clean',
-		gulp.parallel('templates:compile', 'styles:compile', 'sprite', 'copy'),
-		gulp.parallel('watch', 'server')
+	'clean',
+	gulp.parallel('templates:compile', 'styles:compile', 'sprite', 'copy')
 	)
 );
+
 
 
 
