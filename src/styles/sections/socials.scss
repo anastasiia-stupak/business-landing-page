@@ -3,6 +3,10 @@
 	padding-bottom: 85px;
 	background-color: $socials-bg;
 
+	@media (max-width: $big-phone) {
+		padding: 30px 15px;
+	}
+	
 	.title {
 		color: #ffffff;
 		margin-bottom: 30px;
@@ -64,6 +68,14 @@
 		padding: 22px 20px;
 		border: none;
 		background-color: $socials-footer-gray;
+
+		@media (max-width: $tablet) {
+			width: 50%;
+		}
+
+		@media (max-width: $big-phone) {
+			padding: 15px;
+		}
 	}
 
 	&__submit {

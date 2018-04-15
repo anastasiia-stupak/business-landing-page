@@ -8,6 +8,12 @@
 	background-color: $dark-gray-text;
 	position: relative;
 
+	@media (max-width: $big-phone) {
+		min-height: 350px;
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+
 	&__content {
 		@include centerer-x();
 
@@ -23,6 +29,10 @@
 		font-family: $font-family-main-bold;
 		font-size: 3rem;
 		text-align: center;
+
+		@media (max-width: $big-phone) {
+			font-size: 2rem;
+		}
 	}
 
 	&__text {
@@ -31,11 +41,22 @@
 
 		font-family: $font-family-main-light;
 		font-size: 1.875rem;
+		text-align: center;
 		letter-spacing: 0.5px;
+
+		@media (max-width: $big-phone) {
+			font-size: 1rem;
+		}
 	}
 
 	&__button {
 		padding: 20px 40px;
 		font-size: 1.5rem;
+
+		@media (max-width: $big-phone) {
+			padding: 10px 20px;
+			font-size: 1.2rem;
+			text-align: center;
+		}
 	}
 }

@@ -17,10 +17,18 @@
 
 		&:first-child {
 			border-right: 1px solid #e2e2e2;
+
+			@media (max-width: $big-phone) {
+				padding: 0;
+			}
 		}
 
 		&:last-child {
 			margin-right: 12px;
+
+			@media (max-width: $big-phone) {
+				margin-right: 0;
+			}
 		}
 
 		.fa {
@@ -56,15 +64,31 @@
 			align-items: center;
 			justify-content: space-between;
 			height: 130px;
+
+			@media (max-width: $tablet) {
+				flex-direction: column;
+				padding-top: 30px;
+			}
+		}
+
+		@media (max-width: $tablet) {
+			min-height: 200px;
 		}
 	}
 
 	&__logo {
-
+		@media (max-width: $tablet) {
+			margin-bottom: 15px;
+		}
 	}
 
 	&__nav {
 		margin-left: 160px;
+
+		@media (max-width: $tablet) {
+			margin-left: 0;
+			margin-bottom: 20px;
+		}
 
 		&-link {
 			margin-right: 17px;
@@ -89,6 +113,10 @@
 				margin-left: 17px;
 				border-radius: 50%;
 				background-color: $dark-gray-text;
+
+				@media (max-width: $big-phone) {
+					display: none;
+				}
 			}
 
 			&:last-child {

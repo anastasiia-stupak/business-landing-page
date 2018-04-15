@@ -40,6 +40,10 @@
 		font-size: 2.25rem;
 		font-family: $font-family-main-bold;
 		line-height: 1;
+
+		@media (max-width: $big-phone) {
+			font-size: 2rem;
+		}
 	}
 
 	&__text {
@@ -47,6 +51,10 @@
 		font-size: 1.25rem;
 		letter-spacing: 0.4px;
 		font-family: $font-family-main-light;
+
+		@media (max-width: $big-phone) {
+			font-size: 0.8rem;
+		}
 	}
 
 	&--with-bottom-line {
@@ -60,4 +68,6 @@
 			background-color: $dark-gray-text;
 		}
 	}
+
+
 }

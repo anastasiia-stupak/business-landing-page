@@ -1,16 +1,30 @@
 .approach {
+	display: flex;
+	flex-direction: column;
 	padding-top: 85px;
 	padding-bottom: 130px;
 	background-color: $approach-bg;
 
+	@media (max-width: $tablet) {
+		padding: 30px 15px;
+	}
+
+	@media (max-width: $big-phone) {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
 	&__list {
 		margin-top: 45px;
 		padding: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 
 	&__item {
 		display: flex;
-		height: 237px;
+		min-height: 237px;
 		margin-bottom: 40px;
 		border-radius: 5px;
 		box-shadow: 0px 0px 5px 0px #e2e2e2;
@@ -25,6 +39,23 @@
 			.approach__text {
 				text-align: right;
 			}
+
+			@media (max-width: $tablet) {
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				width: 85%;
+				padding-top: 15px;
+			}
+
+		}
+
+		@media (max-width: $tablet) {
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			width: 85%;;
+			padding-top: 15px;
 		}
 	}
 
@@ -32,19 +63,45 @@
 		padding: 70px 90px;
 		font-family: $font-family-approach;
 		color: $approach-text;
+
+		@media (max-width: $tablet) {
+			padding: 30px 60px;
+		}
+
+		@media (max-width: $big-phone) {
+			padding: 15px;
+		}
 	}
 
 	&__title {
 		color: $dark-gray-text;
 		font-family: $font-family-main-bold;
+
+		@media (max-width: $tablet) {
+			text-align: center;
+		}
 	}
 
 	&__description {
 		font-size: 0.84375rem;
+
+		@media (max-width: $tablet) {
+			text-align: center;
+		}
 	}
 
 	&__image {
 		position: relative;
+
+		@media (max-width: $tablet) {
+			width: 60%;
+		}
+	}
+
+	&__picture {
+		@media (max-width: $tablet) {
+			width: 100%;
+		}
 	}
 
 	&__step {
@@ -69,6 +126,10 @@
 			padding-top: 10px;
 			font-size: 3.75rem;
 			font-family: $font-family-steps;
+		}
+
+		@media (max-width: $tablet) {
+			display: none;
 		}
 	}
 }
