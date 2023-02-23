@@ -1,7 +1,7 @@
 # Business Landing Page
 ##### A responsive landing page layout
 
-### You can view deployed it here: https://velgreen-business-landing-page.herokuapp.com/
+### [inactive] You can view deployed it here: https://velgreen-business-landing-page.herokuapp.com/
 
 #### Technologies Used:
 - HTML5
